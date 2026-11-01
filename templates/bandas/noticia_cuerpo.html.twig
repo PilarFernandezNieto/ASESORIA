@@ -1,0 +1,42 @@
+{# Datos: datos.bloques (destacado|parrafo|subtitulo|cita|lista|figura), datos.volver, datos.laterales #}
+{% set otras = noticias|filter(n => n.id in datos.laterales.noticias_ids) %}
+<section class="banda_noticia_cuerpo pb-5">
+    <div class="container pb-lg-5">
+        <div class="row g-5">
+            <article class="col-lg-7 noticia_texto">
+                {% for bloque in datos.bloques %}
+                    {% if bloque.tipo == 'destacado' %}
+                <p class="noticia_destacado">{{ bloque.texto }}</p>
+                    {% elseif bloque.tipo == 'parrafo' %}
+                <p>{{ bloque.texto }}</p>
+                    {% elseif bloque.tipo == 'subtitulo' %}
+                <h2 class="mt-5 mb-3">{{ bloque.texto }}</h2>
+                    {% elseif bloque.tipo == 'cita' %}
+                <blockquote class="noticia_cita my-5 py-4 ps-4"><p class="mb-0">{{ bloque.texto }}</p></blockquote>
+                    {% elseif bloque.tipo == 'lista' %}
+                <ul class="ps-3 mb-4">
+                    {% for item in bloque.items %}
+                    <li class="mb-1">{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                    {% elseif bloque.tipo == 'figura' %}
+                <figure class="noticia_figura my-5">
+                    <div class="imagen_placeholder imagen_16_10 p-3"><i class="fa-regular fa-image"></i><span>{{ bloque.imagen_texto }}</span></div>
+                    <figcaption class="mt-2">{{ bloque.pie }}</figcaption>
+                </figure>
+                    {% endif %}
+                {% endfor %}
+                <a class="enlace_texto d-inline-block mt-4" href="{{ datos.volver.url }}">{{ datos.volver.texto }}</a>
+            </article>
+            <aside class="col-lg-4 offset-lg-1 noticia_laterales pt-2 mt-3 mt-lg-0" aria-labelledby="otras_lateral">
+                <h2 class="noticia_laterales_titulo pb-3 mb-0" id="otras_lateral">{{ datos.laterales.titulo }}</h2>
+                <ul class="noticia_laterales_lista p-0 mt-0 mb-4">
+                    {% for otra in otras %}
+                    <li class="py-3"><time datetime="{{ otra.fecha }}">{{ otra.fecha_texto }}</time><a href="{{ otra.url }}">{{ otra.titulo }}</a></li>
+                    {% endfor %}
+                </ul>
+                <a class="enlace_texto" href="{{ datos.laterales.enlace.url }}">{{ datos.laterales.enlace.texto }}</a>
+            </aside>
+        </div>
+    </div>
+</section>

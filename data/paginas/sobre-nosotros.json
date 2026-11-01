@@ -1,0 +1,99 @@
+{
+  "titulo": "Sobre nosotros · Avantek",
+  "activa": "sobre-nosotros",
+  "estilos": ["interior"],
+  "bandas": [
+    {
+      "plantilla": "cabecera_interior",
+      "datos": {
+        "titulo": "Sobre nosotros",
+        "intro": "Avantek es una consultoría tecnológica. Aquí explicamos a qué nos dedicamos, cómo abordamos las necesidades de las empresas y qué lugar ocupa nuestro producto propio."
+      }
+    },
+    {
+      "plantilla": "texto_imagen",
+      "datos": {
+        "imagen_texto": "Imagen: equipo o entorno de trabajo",
+        "titulo": "Quiénes somos",
+        "destacado": "Avantek acompaña a empresas en el diseño y desarrollo de soluciones tecnológicas.",
+        "parrafos": [
+          "Nuestro trabajo parte de entender cómo funciona cada organización para proponer software que le resulte útil.",
+          "[Texto provisional: se sustituirá por la presentación definitiva de la empresa.]"
+        ]
+      }
+    },
+
+    {
+      "plantilla": "valores",
+      "datos": {
+        "titulo": "Cómo abordamos cada necesidad",
+        "intro": "Cuatro ideas que describen el enfoque de una consultoría tecnológica. Contenido provisional.",
+        "items": [
+          {
+            "numero": "01",
+            "titulo": "Entender antes de construir",
+            "texto": "Conocer las necesidades del cliente es el punto de partida de cualquier proyecto."
+          },
+          {
+            "numero": "02",
+            "titulo": "Tecnología útil",
+            "texto": "Buscar soluciones que resuelvan problemas reales, sin complicar lo que no hace falta."
+          },
+          {
+            "numero": "03",
+            "titulo": "Calidad en el desarrollo",
+            "texto": "Cuidar el código y las decisiones técnicas para que el software dure."
+          },
+          {
+            "numero": "04",
+            "titulo": "Trato cercano",
+            "texto": "Comunicación clara y directa durante todo el proceso."
+          }
+        ]
+      }
+    },
+    {
+      "plantilla": "relacion",
+      "datos": {
+        "titulo": "Avantek y [NOMBRE DEL PRODUCTO]",
+        "texto": "Además de su actividad de consultoría, Avantek desarrolla un producto de software propio para aplicaciones empresariales.",
+        "bloques": [
+          {
+            "etiqueta": "Empresa",
+            "titulo": "Avantek",
+            "texto": "Consultoría tecnológica. Desarrolla soluciones de software para empresas.",
+            "producto": false
+          },
+          {
+            "etiqueta": "Producto",
+            "titulo": "[NOMBRE DEL PRODUCTO]",
+            "texto": "Software propio de Avantek para aplicaciones empresariales.",
+            "producto": true
+          }
+        ]
+      }
+    },
+    {
+      "plantilla": "cierre",
+      "datos": {
+        "destinos": [
+          {
+            "url": "index.html",
+            "texto": "Inicio",
+            "detalle": "Volver a la portada"
+          },
+          {
+            "url": "noticias.html",
+            "texto": "Noticias",
+            "detalle": "Novedades de Avantek"
+          },
+          {
+            "url": "contacto.html",
+            "texto": "Contacto",
+            "detalle": "Escríbenos tus consultas"
+          }
+        ]
+      }
+    }
+  ]
+}

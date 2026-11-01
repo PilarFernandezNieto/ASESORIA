@@ -1,0 +1,124 @@
+{
+  "titulo": "Avantek · Consultoría tecnológica",
+  "activa": "inicio",
+  "estilos": ["index"],
+  "bandas": [
+    {
+      "plantilla": "hero",
+      "datos": {
+        "titulo_antes": "Tecnología pensada para las ",
+        "resalte": "necesidades",
+        "titulo_despues": " de tu empresa",
+        "texto": "Avantek es una consultoría tecnológica. Analizamos cada necesidad y desarrollamos soluciones de software que ayudan a las empresas a trabajar mejor.",
+        "etiqueta_fondo": "Imagen o ilustración de fondo, a todo el ancho",
+        "ola": "assets/ola.png",
+        "boton": { "texto": "Conocer Avantek", "url": "sobre-nosotros.html" },
+        "enlace": { "texto": "Escríbenos", "url": "contacto.html" }
+      }
+    },
+    {
+      "plantilla": "actividad",
+      "datos": {
+        "enunciado": "Partimos de la necesidad del negocio y buscamos la herramienta adecuada para resolverla.",
+        "texto": "Acompañamos a las empresas en las decisiones y los proyectos en los que la tecnología forma parte de la solución, desde el análisis hasta el desarrollo.",
+        "enlace": { "texto": "Más sobre Avantek", "url": "sobre-nosotros.html" }
+      }
+    },
+    {
+      "plantilla": "ambitos_iconos",
+      "datos": {
+        "titulo": "Ámbitos de trabajo",
+        "intro": "Las áreas en las que una consultoría tecnológica puede ayudar a una empresa. Descripción general y provisional.",
+        "items": [
+          {
+            "icono": "fa-compass",
+            "titulo": "Consultoría tecnológica",
+            "texto": "Orientación para decidir qué tecnología encaja con cada necesidad del negocio."
+          },
+          {
+            "icono": "fa-code",
+            "titulo": "Desarrollo de software",
+            "texto": "Diseño y construcción de soluciones a medida para la gestión de la empresa."
+          },
+          {
+            "icono": "fa-magnifying-glass",
+            "titulo": "Análisis de necesidades",
+            "texto": "Entender cómo trabaja la organización antes de proponer cambios."
+          },
+          {
+            "icono": "fa-lightbulb",
+            "titulo": "Soluciones adecuadas",
+            "texto": "Elegir herramientas útiles y proporcionadas al problema que hay que resolver."
+          }
+        ]
+      }
+    },
+    {
+      "plantilla": "teaser",
+      "datos": {
+        "titulo": "Primero entendemos el negocio; después elegimos la tecnología.",
+        "pasos": [
+          {
+            "numero": "01",
+            "titulo": "Entender la necesidad",
+            "texto": "Escuchar y analizar cómo funciona la empresa."
+          },
+          {
+            "numero": "02",
+            "titulo": "Proponer y desarrollar",
+            "texto": "Definir una solución adecuada y construirla con criterio técnico."
+          },
+          {
+            "numero": "03",
+            "titulo": "Seguir cerca",
+            "texto": "Acompañar la evolución de lo que se ha construido."
+          }
+        ]
+      }
+    },
+    {
+      "plantilla": "producto",
+      "datos": {
+        "imagen_texto": "Imagen del producto",
+        "titulo": "[NOMBRE DEL PRODUCTO], el software propio de Avantek",
+        "texto": "Además de su trabajo de consultoría, Avantek desarrolla una solución de software para aplicaciones empresariales.",
+        "enlace": {
+          "texto": "Cómo se relaciona con Avantek",
+          "url": "sobre-nosotros.html#producto"
+        }
+      }
+    },
+    {
+      "plantilla": "ultimas_noticias",
+      "datos": {
+        "titulo": "Últimas noticias",
+        "intro": "Novedades de Avantek, de la tecnología y de su producto.",
+        "cantidad": 3,
+        "enlace": { "texto": "Ver todas las noticias", "url": "noticias.html" }
+      }
+    },
+    {
+      "plantilla": "cierre",
+      "datos": {
+        "titulo": "Conoce mejor a Avantek",
+        "destinos": [
+          {
+            "url": "sobre-nosotros.html",
+            "texto": "Sobre nosotros",
+            "detalle": "Quiénes somos y cómo trabajamos"
+          },
+          {
+            "url": "noticias.html",
+            "texto": "Noticias",
+            "detalle": "Novedades de la empresa y del producto"
+          },
+          {
+            "url": "contacto.html",
+            "texto": "Contacto",
+            "detalle": "Escríbenos tus consultas"
+          }
+        ]
+      }
+    }
+  ]
+}

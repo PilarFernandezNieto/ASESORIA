@@ -1,0 +1,7 @@
+<section class="banda_ambitos_texto py-5">
+    <div class="container py-lg-5">
+        <h2 class="ambitos_texto_etiqueta mb-4">{{ datos.etiqueta }}</h2>
+        <p class="ambitos_texto_lista mb-4">{% for ambito in datos.lista %}{% if not loop.first %}<span class="ambitos_texto_barra" aria-hidden="true">/</span>{% endif %}<span>{{ ambito }}</span>{% endfor %}</p>
+        <p class="ambitos_texto_nota mb-0">{{ datos.nota }}</p>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+<section class="banda_hero">
+    <div class="hero_fondo" role="img" aria-label="Imagen de fondo decorativa"><span class="hero_fondo_etiqueta"><i class="fa-regular fa-image"></i> {{ datos.etiqueta_fondo }}</span></div>
+    <div class="hero_velo"></div>
+    <img class="hero_cinta" src="{{ datos.ola }}" alt="" aria-hidden="true">
+    <div class="container hero_fondo_contenido">
+        <div class="row">
+            <div class="col-lg-8 hero_contenido">
+                <h1 class="hero_titulo mb-4">{{ datos.titulo_antes }}<span class="hero_resalte px-1">{{ datos.resalte }}</span>{{ datos.titulo_despues }}</h1>
+                <p class="hero_texto mb-4">{{ datos.texto }}</p>
+                <div class="hero_acciones">
+                    <a class="boton_claro py-3 px-4" href="{{ datos.boton.url }}">{{ datos.boton.texto }}</a>
+                    <a class="enlace_claro" href="{{ datos.enlace.url }}">{{ datos.enlace.texto }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

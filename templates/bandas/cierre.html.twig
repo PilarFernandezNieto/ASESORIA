@@ -1,0 +1,12 @@
+{# Datos: datos.destinos y, opcionalmente, datos.titulo (sin título = versión discreta) #}
+{% set con_titulo = datos.titulo is defined and datos.titulo %}
+<section class="banda_cierre{{ con_titulo ? '' : ' banda_cierre_discreto' }} py-5">
+    <div class="container {{ con_titulo ? 'py-lg-5' : 'py-lg-2' }}">
+        {% if con_titulo %}<h2 class="cierre_titulo mb-5">{{ datos.titulo }}</h2>{% endif %}
+        <div class="cierre_destinos">
+            {% for destino in datos.destinos %}
+            <a class="cierre_destino pt-3" href="{{ destino.url }}"><strong class="mb-1">{{ destino.texto }}</strong><span>{{ destino.detalle }}</span></a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

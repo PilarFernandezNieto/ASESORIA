@@ -1,0 +1,19 @@
+{# Datos: datos.noticia_id (se busca en noticias), datos.autor, datos.imagen_texto, datos.migas_inicio #}
+{% set noticia = noticias|filter(n => n.id == datos.noticia_id)|first %}
+<section class="banda_noticia_cabecera py-5">
+    <div class="container pb-lg-3">
+        <nav class="noticia_migas mb-4" aria-label="Ruta de navegación"><a href="{{ datos.migas_inicio.url }}">{{ datos.migas_inicio.texto }}</a><span aria-hidden="true">/</span><span aria-current="page">{{ noticia.categoria }}</span></nav>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7">
+                <h1 class="noticia_ficha_titulo mb-4">{{ noticia.titulo }}</h1>
+                <p class="noticia_ficha_entradilla mb-0">{{ noticia.resumen }}</p>
+                <dl class="noticia_datos mt-4 mb-0 pt-3" aria-label="Datos de la noticia">
+                    <div><dt class="mb-1">Fecha</dt><dd class="mb-0"><time datetime="{{ noticia.fecha }}">{{ noticia.fecha_texto }}</time></dd></div>
+                    <div><dt class="mb-1">Categoría</dt><dd class="mb-0"><span class="noticia_categoria py-1 px-2">{{ noticia.categoria }}</span></dd></div>
+                    <div><dt class="mb-1">Autor</dt><dd class="mb-0">{{ datos.autor }}</dd></div>
+                </dl>
+            </div>
+            <div class="col-lg-5"><div class="imagen_placeholder imagen_4_3 forma_lobulo p-3 ms-lg-auto"><i class="fa-regular fa-image"></i><span>{{ datos.imagen_texto }}</span></div></div>
+        </div>
+    </div>
+</section>

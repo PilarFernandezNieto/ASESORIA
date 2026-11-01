@@ -1,0 +1,14 @@
+<section class="banda_texto_imagen py-5">
+    <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5"><div class="imagen_placeholder imagen_4_5 forma_lobulo p-3"><i class="fa-regular fa-image"></i><span>{{ datos.imagen_texto }}</span></div></div>
+            <div class="col-lg-6 offset-lg-1">
+                <h2 class="titulo_banda mb-4">{{ datos.titulo }}</h2>
+                <p class="texto_destacado">{{ datos.destacado }}</p>
+                {% for parrafo in datos.parrafos %}
+                <p>{{ parrafo }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

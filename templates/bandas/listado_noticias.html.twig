@@ -1,0 +1,17 @@
+{# Datos: datos.filtro_todas, datos.categorias, datos.paginacion; noticias (global) #}
+<section class="banda_noticias banda_listado py-5">
+    <div class="container pb-lg-5">
+        <nav class="filtro_categorias mb-5" aria-label="Filtrar por categoría">
+            <a href="#" aria-current="true" class="activo py-2 px-3">{{ datos.filtro_todas }}</a>
+            {% for categoria in datos.categorias %}
+            <a class="py-2 px-3" href="#">{{ categoria }}</a>
+            {% endfor %}
+        </nav>
+        <div class="row g-5">
+            {% for noticia in noticias %}
+                {% include 'bandas/caja_noticia.html.twig' %}
+            {% endfor %}
+        </div>
+        {% include 'bandas/paginacion.html.twig' with {paginacion: datos.paginacion} %}
+    </div>
+</section>

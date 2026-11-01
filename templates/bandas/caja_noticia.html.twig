@@ -1,0 +1,12 @@
+{# Caja de noticia compartida por la portada y el listado. Variable: noticia #}
+<div class="col-md-6 col-lg-4">
+    <article class="noticia">
+        <a class="noticia_imagen_enlace mb-3" href="{{ noticia.url }}" tabindex="-1" aria-hidden="true"><div class="imagen_placeholder imagen_16_10 p-3"><i class="fa-regular fa-image"></i><span>Imagen de la noticia</span></div></a>
+        <div class="noticia_cuerpo">
+            <p class="noticia_meta mb-2"><span class="noticia_categoria py-1 px-2">{{ noticia.categoria }}</span><time datetime="{{ noticia.fecha }}">{{ noticia.fecha_texto }}</time></p>
+            <h3 class="noticia_titulo mb-2"><a href="{{ noticia.url }}">{{ noticia.titulo }}</a></h3>
+            <p class="noticia_resumen mb-3">{{ noticia.resumen }}</p>
+            <a class="enlace_texto mt-auto" href="{{ noticia.url }}">Leer noticia</a>
+        </div>
+    </article>
+</div>

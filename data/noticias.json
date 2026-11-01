@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "titulo": "Avantek estrena nueva web corporativa",
+    "categoria": "Empresa",
+    "fecha": "2026-10-02",
+    "fecha_texto": "2 octubre 2026",
+    "resumen": "Un sitio renovado para presentar a la empresa, su actividad y los proyectos en los que trabaja.",
+    "url": "noticia.html"
+  },
+  {
+    "id": 2,
+    "titulo": "Cómo planteamos el desarrollo de aplicaciones a medida",
+    "categoria": "Tecnología",
+    "fecha": "2026-09-24",
+    "fecha_texto": "24 septiembre 2026",
+    "resumen": "Repasamos las ideas que guían nuestros proyectos: entender el negocio primero y construir después.",
+    "url": "noticia.html"
+  },
+  {
+    "id": 3,
+    "titulo": "Presentamos [NOMBRE DEL PRODUCTO], el software propio de Avantek",
+    "categoria": "Producto",
+    "fecha": "2026-09-15",
+    "fecha_texto": "15 septiembre 2026",
+    "resumen": "Una primera mirada al producto que Avantek desarrolla para aplicaciones empresariales.",
+    "url": "noticia.html"
+  },
+  {
+    "id": 4,
+    "titulo": "Buenas prácticas para modelar los datos de una aplicación de gestión",
+    "categoria": "Tecnología",
+    "fecha": "2026-09-03",
+    "fecha_texto": "3 septiembre 2026",
+    "resumen": "Algunas pautas generales para que la información de una empresa se mantenga ordenada y evolucione bien.",
+    "url": "noticia.html"
+  },
+  {
+    "id": 5,
+    "titulo": "Qué debe tener un proyecto de software empresarial bien planteado",
+    "categoria": "Consultoría",
+    "fecha": "2026-08-20",
+    "fecha_texto": "20 agosto 2026",
+    "resumen": "Preguntas útiles que conviene responder antes de empezar a desarrollar una aplicación para el negocio.",
+    "url": "noticia.html"
+  },
+  {
+    "id": 6,
+    "titulo": "Novedades de la versión inicial de [NOMBRE DEL PRODUCTO]",
+    "categoria": "Producto",
+    "fecha": "2026-08-07",
+    "fecha_texto": "7 agosto 2026",
+    "resumen": "Un resumen de lo que incluye la primera versión y de lo que está previsto seguir mejorando.",
+    "url": "noticia.html"
+  },
+  {
+    "id": 7,
+    "titulo": "Entender la necesidad antes de elegir la tecnología",
+    "categoria": "Consultoría",
+    "fecha": "2026-07-22",
+    "fecha_texto": "22 julio 2026",
+    "resumen": "Por qué el análisis previo es la parte del proyecto que más condiciona el resultado.",
+    "url": "noticia.html"
+  }
+]

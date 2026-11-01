@@ -1,0 +1,268 @@
+/* Páginas interiores */
+.banda_cabecera_interior {
+  background-image: url('../assets/imagen_encabezados.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 15rem;
+}
+@media (max-width: 991.98px) {
+  .banda_cabecera_interior {
+    background-position: 70% center;
+    height: 22rem;
+  }
+}
+.banda_cabecera_interior .overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(to left, var(--avantek-ink-navy), transparent);
+  pointer-events: none;
+}
+.cabecera_interior_titulo {
+  font-size: clamp(2.6rem, 6.2vw, 5.2rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  color: var(--avantek-sky);
+}
+.cabecera_interior_intro {
+  font-size: 1.1rem;
+  max-width: 26rem;
+  color: var(--avantek-bg-soft);
+}
+.banda_texto_imagen .titulo_banda {
+  color: var(--avantek-navy-400);
+  font: 700 0.85rem var(--font-body);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.banda_texto_imagen p {
+  max-width: 34rem;
+}
+.banda_ambitos_texto {
+  background: var(--avantek-sky);
+  color: var(--avantek-navy-900);
+}
+.ambitos_texto_etiqueta {
+  font: 700 0.85rem var(--font-body);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--avantek-navy-900);
+}
+.ambitos_texto_lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.25rem;
+  font: 700 clamp(2rem, 5.2vw, 4.4rem)/1.12 var(--font-display);
+  letter-spacing: -0.03em;
+  color: var(--avantek-navy);
+}
+.ambitos_texto_barra {
+  color: #fff;
+}
+.ambitos_texto_nota {
+  max-width: 32rem;
+  color: var(--avantek-navy-900);
+}
+.valores_intro {
+  max-width: 20rem;
+}
+.valores_lista {
+  list-style: none;
+}
+.valor_item {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 1rem;
+  border-top: 1px solid var(--border);
+}
+.valor_item:first-child {
+  border-top: 2px solid var(--avantek-navy);
+}
+.valor_numero {
+  font: 600 2.6rem var(--font-display);
+  color: var(--avantek-sky-500);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.valor_titulo {
+  font-size: 1.35rem;
+}
+.banda_relacion {
+  background: var(--avantek-bg-soft);
+}
+.relacion_esquema {
+  display: grid;
+  gap: 1rem;
+}
+.relacion_bloque {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+}
+.relacion_bloque_producto {
+  background: var(--avantek-navy);
+  border-color: var(--avantek-navy);
+  color: var(--avantek-sky-100);
+  border-radius: var(--forma_lobulo);
+}
+.relacion_bloque_producto h3 {
+  color: #fff;
+}
+.relacion_bloque_producto .relacion_etiqueta {
+  color: var(--avantek-sky);
+}
+.relacion_etiqueta {
+  display: block;
+  font: 700 0.75rem var(--font-body);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--avantek-text-soft);
+}
+.relacion_bloque h3 {
+  font-size: 1.5rem;
+}
+.filtro_categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.filtro_categorias a {
+  font: 600 0.95rem var(--font-body);
+  text-decoration: none;
+  color: var(--avantek-navy);
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.filtro_categorias a:hover {
+  border-color: var(--avantek-sky);
+}
+.filtro_categorias a.activo {
+  background: var(--avantek-navy);
+  border-color: var(--avantek-navy);
+  color: #fff;
+}
+.banda_paginacion .pagination {
+  gap: 0.35rem;
+  --bs-pagination-color: var(--avantek-navy);
+  --bs-pagination-active-bg: var(--avantek-navy);
+  --bs-pagination-active-border-color: var(--avantek-navy);
+  --bs-pagination-hover-color: var(--avantek-navy-700);
+  --bs-pagination-focus-box-shadow: 0 0 0 3px var(--avantek-sky);
+}
+.banda_paginacion .page-link {
+  border-radius: 6px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-color: var(--border);
+}
+.banda_contacto {
+  overflow: hidden;
+}
+.contacto_panel {
+  background: var(--avantek-navy);
+  color: var(--avantek-sky-100);
+}
+.contacto_panel_interior {
+  max-width: 640px;
+}
+.contacto_panel_titulo {
+  color: #fff;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+.contacto_datos {
+  list-style: none;
+  display: grid;
+  gap: 1.5rem;
+}
+.contacto_datos li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.contacto_datos i {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  background: var(--avantek-sky);
+  color: var(--avantek-navy-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacto_datos strong {
+  display: block;
+  color: var(--avantek-sky);
+  font-family: var(--font-display);
+}
+.contacto_formulario_zona {
+  background: #fff;
+}
+.contacto_formulario {
+  max-width: 760px;
+}
+.contacto_formulario_titulo {
+  font-size: 1.6rem;
+}
+.form-label {
+  font-weight: 700;
+  color: var(--avantek-ink);
+  font-size: 0.95rem;
+}
+.contacto_formulario .form-control {
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  font-size: 1rem;
+  min-height: 48px;
+}
+.contacto_formulario .form-control:focus {
+  border-color: var(--avantek-navy);
+  box-shadow: 0 0 0 4px rgba(134, 210, 252, 0.6);
+}
+.form-check-input {
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 2px solid var(--avantek-navy-400);
+  float: none;
+}
+.form-check-input:checked {
+  background-color: var(--avantek-navy);
+  border-color: var(--avantek-navy);
+}
+.form-check-input:focus {
+  box-shadow: 0 0 0 4px rgba(134, 210, 252, 0.6);
+}
+.contacto_privacidad {
+  display: flex;
+  gap: 0.75rem;
+}
+/* Excepción: el relleno lateral alinea el panel con el borde del .container (cálculo con 100vw) */
+@media (min-width: 992px) {
+  .contacto_panel_interior {
+    padding-left: max(1rem, calc((100vw - 1320px) / 2 + 12px));
+  }
+  .contacto_formulario {
+    padding-right: max(1rem, calc((100vw - 1320px) / 2 + 12px));
+  }
+}
+@media (max-width: 991.98px) {
+  .contacto_panel_interior,
+  .contacto_formulario {
+    max-width: none;
+  }
+  .valor_item {
+    grid-template-columns: 64px 1fr;
+  }
+}

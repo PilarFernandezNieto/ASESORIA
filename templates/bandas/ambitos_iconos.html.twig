@@ -1,0 +1,17 @@
+<section class="banda_ambitos banda_ambitos_iconos py-5">
+    <div class="container py-lg-5">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <h2 class="titulo_banda mb-3">{{ datos.titulo }}</h2>
+                <p class="ambitos_intro mb-0">{{ datos.intro }}</p>
+            </div>
+            <div class="col-lg-8">
+                <div class="ambitos_rejilla">
+                    {% for item in datos.items %}
+                    <div class="ambito_icono_item py-4 {{ loop.index is odd ? 'pe-md-4' : 'px-md-4' }}"><span class="ambito_icono mb-3"><i class="fa-solid {{ item.icono }}" aria-hidden="true"></i></span><h3 class="ambito_icono_titulo mb-2">{{ item.titulo }}</h3><p class="mb-0">{{ item.texto }}</p></div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+{# Cabecera común. Datos: sitio.marca, sitio.menu, pagina.activa #}
+<header class="cabecera_general">
+    <nav class="navbar navbar-expand-lg py-2">
+        <div class="container">
+            <a class="navbar-brand cabecera_marca p-0 me-4" href="{{ sitio.marca.url_inicio }}" aria-label="{{ sitio.marca.nombre }}, inicio"><img class="logo_marca" src="{{ sitio.marca.logo }}" alt="{{ sitio.marca.nombre }}"></a>
+            <button class="navbar-toggler cabecera_toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu_principal" aria-controls="menu_principal" aria-expanded="false" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="menu_principal">
+                <ul class="navbar-nav ms-auto cabecera_menu py-2 py-lg-0">
+                    {% for item in sitio.menu %}
+                        
+                        <li class="nav-item"><a class="nav-link{{ item.clave == pagina.activa ? ' activo' : '' }} py-3 px-3" href="{{ item.url }}"{{ item.clave == pagina.activa ? ' aria-current="page"' : '' }}>{{ item.texto }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

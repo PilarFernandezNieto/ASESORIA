@@ -1,0 +1,17 @@
+<section class="banda_valores py-5">
+    <div class="container py-lg-5">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <h2 class="titulo_banda mb-3">{{ datos.titulo }}</h2>
+                <p class="valores_intro">{{ datos.intro }}</p>
+            </div>
+            <div class="col-lg-8">
+                <ol class="valores_lista m-0 p-0">
+                    {% for item in datos.items %}
+                        <li class="valor_item py-4"><span class="valor_numero">{{ item.numero }}</span><div><h3 class="valor_titulo mb-1">{{ item.titulo }}</h3><p class="mb-0">{{ item.texto }}</p></div></li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>

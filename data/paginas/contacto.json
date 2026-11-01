@@ -1,0 +1,80 @@
+{
+  "titulo": "Contacto · Avantek",
+  "activa": "contacto",
+  "estilos": ["interior"],
+  "bandas": [
+    {
+      "plantilla": "cabecera_interior",
+      "datos": {
+        "titulo": "Contacto",
+        "intro": "Escríbenos si tienes consultas sobre Avantek, su actividad o [NOMBRE DEL PRODUCTO]. Te responderemos en cuanto sea posible."
+      }
+    },
+    {
+      "plantilla": "contacto",
+      "datos": {
+        "panel": {
+          "titulo": "Información de contacto",
+          "texto": "Puedes escribirnos para consultas sobre Avantek, su actividad, posibles proyectos o el producto. Los datos siguientes son provisionales.",
+          "datos": [
+            {
+              "icono": "fa-regular fa-envelope",
+              "titulo": "Correo electrónico",
+              "valor": "[correo@dominio.es]"
+            },
+            {
+              "icono": "fa-solid fa-phone",
+              "titulo": "Teléfono",
+              "valor": "[+34 000 000 000]"
+            },
+            {
+              "icono": "fa-solid fa-location-dot",
+              "titulo": "Dirección",
+              "valor": "[Dirección postal de la empresa]"
+            }
+          ]
+        },
+        "formulario": {
+          "titulo": "Envíanos un mensaje",
+          "campos": [
+            {
+              "id": "nombre",
+              "etiqueta": "Nombre",
+              "tipo": "text",
+              "autocomplete": "name",
+              "ancho": "col-md-6"
+            },
+            {
+              "id": "correo",
+              "etiqueta": "Correo electrónico",
+              "tipo": "email",
+              "autocomplete": "email",
+              "ancho": "col-md-6"
+            },
+            {
+              "id": "asunto",
+              "etiqueta": "Asunto",
+              "tipo": "text",
+              "autocomplete": null,
+              "ancho": "col-12"
+            },
+            {
+              "id": "mensaje",
+              "etiqueta": "Mensaje",
+              "tipo": "textarea",
+              "autocomplete": null,
+              "ancho": "col-12"
+            }
+          ],
+          "privacidad": {
+            "antes": "He leído y acepto la ",
+            "enlace": "política de privacidad",
+            "url": "#",
+            "despues": "."
+          },
+          "boton": "Enviar mensaje"
+        }
+      }
+    }
+  ]
+}

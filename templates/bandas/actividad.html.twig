@@ -1,0 +1,11 @@
+<section class="banda_actividad py-5">
+    <div class="container py-lg-5">
+        <div class="row g-5">
+            <div class="col-lg-7"><h2 class="actividad_enunciado">{{ datos.enunciado }}</h2></div>
+            <div class="col-lg-4 offset-lg-1 align-self-end actividad_presentacion">
+                <p>{{ datos.texto }}</p>
+                <a class="enlace_texto" href="{{ datos.enlace.url }}">{{ datos.enlace.texto }}</a>
+            </div>
+        </div>
+    </div>
+</section>

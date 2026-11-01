@@ -1,0 +1,10 @@
+<section class="banda_teaser">
+    <div class="container">
+        <h2 class="teaser_titulo mb-5">{{ datos.titulo }}</h2>
+        <ol class="teaser_pasos m-0 p-0">
+            {% for paso in datos.pasos %}
+            <li class="teaser_paso pt-3"><span class="teaser_numero mb-2">{{ paso.numero }}</span><h3 class="mb-2">{{ paso.titulo }}</h3><p class="mb-0">{{ paso.texto }}</p></li>
+            {% endfor %}
+        </ol>
+    </div>
+</section>

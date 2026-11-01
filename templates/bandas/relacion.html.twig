@@ -1,0 +1,17 @@
+<section class="banda_relacion py-5" id="producto">
+    <div class="container py-lg-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+                <h2 class="titulo_banda mb-3">{{ datos.titulo }}</h2>
+                <p>{{ datos.texto }}</p>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+                <div class="relacion_esquema">
+                    {% for bloque in datos.bloques %}
+                    <div class="relacion_bloque{{ bloque.producto ? ' relacion_bloque_producto' : '' }} py-4 px-4{{ bloque.producto ? ' ms-3 ms-lg-5' : '' }}"><span class="relacion_etiqueta mb-2">{{ bloque.etiqueta }}</span><h3 class="mb-2">{{ bloque.titulo }}</h3><p class="mb-0">{{ bloque.texto }}</p></div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

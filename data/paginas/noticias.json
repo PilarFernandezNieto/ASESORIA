@@ -1,0 +1,27 @@
+{
+  "titulo": "Noticias · Avantek",
+  "activa": "noticias",
+  "estilos": ["interior"],
+  "bandas": [
+    {
+      "plantilla": "cabecera_interior",
+      "datos": {
+        "titulo": "Noticias y novedades",
+        "intro": "Artículos y novedades sobre la actividad de Avantek, la tecnología y su producto."
+      }
+    },
+    {
+      "plantilla": "listado_noticias",
+      "datos": {
+        "filtro_todas": "Todas",
+        "categorias": ["Empresa", "Consultoría", "Tecnología", "Producto"],
+        "paginacion": {
+          "actual": 1,
+          "total": 3,
+          "anterior": "Anterior",
+          "siguiente": "Siguiente"
+        }
+      }
+    }
+  ]
+}

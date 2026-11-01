@@ -1,0 +1,17 @@
+{# Datos: datos.* de la banda; noticias (global) ordenadas de más reciente a más antigua #}
+<section class="banda_noticias py-5">
+    <div class="container py-lg-5">
+        <div class="noticias_cabecera">
+            <div>
+                <h2 class="titulo_banda mb-3">{{ datos.titulo }}</h2>
+                <p class="noticias_intro">{{ datos.intro }}</p>
+            </div>
+            <a class="enlace_texto" href="{{ datos.enlace.url }}">{{ datos.enlace.texto }}</a>
+        </div>
+        <div class="row g-5">
+            {% for noticia in noticias|slice(0, datos.cantidad) %}
+                {% include 'bandas/caja_noticia.html.twig' %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

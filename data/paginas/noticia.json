@@ -1,0 +1,77 @@
+{
+  "titulo": "Cómo planteamos el desarrollo de aplicaciones a medida · Noticias · Avantek",
+  "activa": "noticias",
+  "estilos": ["interior", "noticia"],
+  "bandas": [
+    {
+      "plantilla": "noticia_cabecera",
+      "datos": {
+        "noticia_id": 2,
+        "autor": "[Autor o equipo]",
+        "imagen_texto": "Imagen principal de la noticia",
+        "migas_inicio": { "texto": "Noticias", "url": "noticias.html" }
+      }
+    },
+    {
+      "plantilla": "noticia_cuerpo",
+      "datos": {
+        "bloques": [
+          {
+            "tipo": "destacado",
+            "texto": "Antes de elegir una herramienta hay que entender qué problema debe resolver. Ese es el punto de partida de cualquier aplicación a medida."
+          },
+          {
+            "tipo": "parrafo",
+            "texto": "[Texto provisional. El contenido definitivo de la noticia sustituirá a este párrafo y a los siguientes, manteniendo la misma estructura.]"
+          },
+          { "tipo": "subtitulo", "texto": "Empezar por el negocio" },
+          {
+            "tipo": "parrafo",
+            "texto": "Una aplicación a medida funciona cuando encaja con la forma de trabajar de la empresa. Por eso el primer paso es conocer cómo se organiza el trabajo, qué tareas se repiten y dónde se pierde tiempo o información."
+          },
+          {
+            "tipo": "parrafo",
+            "texto": "Con ese conocimiento se puede decidir qué conviene construir y qué conviene reutilizar."
+          },
+          {
+            "tipo": "cita",
+            "texto": "Primero entendemos el negocio; después elegimos la tecnología."
+          },
+          { "tipo": "subtitulo", "texto": "Construir con criterio" },
+          {
+            "tipo": "parrafo",
+            "texto": "El desarrollo se apoya en decisiones técnicas que conviene explicar y documentar, para que la aplicación pueda evolucionar a la vez que la empresa."
+          },
+          {
+            "tipo": "lista",
+            "items": [
+              "Definir con claridad qué debe hacer la aplicación.",
+              "Elegir las herramientas adecuadas para ese objetivo.",
+              "Cuidar el código para que sea fácil de mantener."
+            ]
+          },
+          { "tipo": "subtitulo", "texto": "Seguir cerca después" },
+          {
+            "tipo": "parrafo",
+            "texto": "Una vez en uso, la aplicación necesita seguimiento y ajustes. Acompañar esa evolución forma parte del trabajo de una consultoría tecnológica."
+          },
+          {
+            "tipo": "figura",
+            "imagen_texto": "Imagen dentro del texto",
+            "pie": "[Pie de imagen provisional]"
+          },
+          { "tipo": "parrafo", "texto": "[Texto provisional de cierre.]" }
+        ],
+        "volver": { "texto": "Volver a Noticias", "url": "noticias.html" },
+        "laterales": {
+          "titulo": "Otras noticias",
+          "noticias_ids": [3, 5, 7],
+          "enlace": {
+            "texto": "Ver todas las noticias",
+            "url": "noticias.html"
+          }
+        }
+      }
+    }
+  ]
+}

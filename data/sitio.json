@@ -1,0 +1,49 @@
+{
+  "marca": {
+    "nombre": "Avantek",
+    "logo": "assets/logo_avantek_claro.png",
+    "logo_pie": "assets/logo_avantek_oscuro.png",
+    "url_inicio": "index.html"
+  },
+  "menu": [
+    { "clave": "inicio", "texto": "Inicio", "url": "index.html" },
+    {
+      "clave": "sobre-nosotros",
+      "texto": "Sobre nosotros",
+      "url": "sobre-nosotros.html"
+    },
+    { "clave": "noticias", "texto": "Noticias", "url": "noticias.html" },
+    { "clave": "contacto", "texto": "Contacto", "url": "contacto.html" }
+  ],
+  "pie": {
+    "texto": "Avantek es una consultoría tecnológica dedicada al desarrollo de soluciones de software para empresas. Entre sus proyectos está [NOMBRE DEL PRODUCTO], su producto propio.",
+    "navegacion": {
+      "titulo": "Navegación",
+      "enlaces": [
+        { "texto": "Inicio", "url": "index.html" },
+        { "texto": "Sobre nosotros", "url": "sobre-nosotros.html" },
+        { "texto": "Noticias", "url": "noticias.html" },
+        { "texto": "Contacto", "url": "contacto.html" }
+      ]
+    },
+    "informacion": {
+      "titulo": "Más información",
+      "enlaces": [
+        { "texto": "Quiénes somos", "url": "sobre-nosotros.html" },
+        {
+          "texto": "[NOMBRE DEL PRODUCTO]",
+          "url": "sobre-nosotros.html#producto"
+        },
+        { "texto": "[Información corporativa adicional]", "url": null }
+      ]
+    },
+    "legal": {
+      "copyright": "© Avantek. Todos los derechos reservados.",
+      "enlaces": [
+        { "texto": "Aviso legal", "url": "#" },
+        { "texto": "Política de privacidad", "url": "#" },
+        { "texto": "Cookies", "url": "#" }
+      ]
+    }
+  }
+}

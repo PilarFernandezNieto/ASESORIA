@@ -1,0 +1,13 @@
+{
+  "name": "avantek/web",
+  "description": "Web corporativa avantek: plantillas Twig organizadas por bandas",
+  "type": "project",
+  "require": {
+    "php": ">=8.1",
+    "twig/twig": "^3.14"
+  },
+  "config": {
+    "sort-packages": true,
+    "cafile": "C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt"
+  }
+}

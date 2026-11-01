@@ -1,0 +1,27 @@
+<section class="banda_contacto">
+    <div class="row g-0">
+        <div class="col-lg-5 contacto_panel px-3 px-lg-0 py-lg-5">
+            <div class="contacto_panel_interior py-5 pe-lg-5 ms-auto">
+                <h2 class="contacto_panel_titulo mb-3">{{ datos.panel.titulo }}</h2>
+                <p>{{ datos.panel.texto }}</p>
+                <ul class="contacto_datos p-0 mt-4 mb-0">
+                    {% for dato in datos.panel.datos %}
+                    <li><i class="{{ dato.icono }}"></i><div><strong>{{ dato.titulo }}</strong><span>{{ dato.valor }}</span></div></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-7 contacto_formulario_zona px-3 px-lg-0 py-lg-5">
+            <form class="contacto_formulario py-5 ps-lg-5" action="#" onsubmit="return false">
+                <h2 class="contacto_formulario_titulo mb-4">{{ datos.formulario.titulo }}</h2>
+                <div class="row g-4">
+                    {% for campo in datos.formulario.campos %}
+                    <div class="{{ campo.ancho }}"><div class="contacto_campo"><label for="{{ campo.id }}" class="form-label mb-1">{{ campo.etiqueta }}</label>{% if campo.tipo == 'textarea' %}<textarea class="form-control py-3 px-3" id="{{ campo.id }}" name="{{ campo.id }}" rows="5"></textarea>{% else %}<input class="form-control py-3 px-3" type="{{ campo.tipo }}" id="{{ campo.id }}" name="{{ campo.id }}"{% if campo.autocomplete %} autocomplete="{{ campo.autocomplete }}"{% endif %}>{% endif %}</div></div>
+                    {% endfor %}
+                    <div class="col-12"><div class="form-check contacto_privacidad ps-0"><input class="form-check-input mt-1 ms-0" type="checkbox" id="privacidad"><label class="form-check-label" for="privacidad">{{ datos.formulario.privacidad.antes }}<a href="{{ datos.formulario.privacidad.url }}">{{ datos.formulario.privacidad.enlace }}</a>{{ datos.formulario.privacidad.despues }}</label></div></div>
+                    <div class="col-12"><button class="boton_principal py-3 px-4" type="submit">{{ datos.formulario.boton }}</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

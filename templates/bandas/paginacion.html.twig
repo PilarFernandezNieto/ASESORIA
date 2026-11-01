@@ -1,0 +1,10 @@
+{# Variable: paginacion {actual, total, anterior, siguiente} #}
+<nav class="banda_paginacion mt-5" aria-label="Paginación de noticias">
+    <ul class="pagination justify-content-center">
+        <li class="page-item{{ paginacion.actual <= 1 ? ' disabled' : '' }}"><a class="page-link" href="#"{{ paginacion.actual <= 1 ? ' tabindex="-1"' : '' }}>{{ paginacion.anterior }}</a></li>
+        {% for numero in 1..paginacion.total %}
+        <li class="page-item{{ numero == paginacion.actual ? ' active' : '' }}"><a class="page-link" href="#"{{ numero == paginacion.actual ? ' aria-current="page"' : '' }}>{{ numero }}</a></li>
+        {% endfor %}
+        <li class="page-item{{ paginacion.actual >= paginacion.total ? ' disabled' : '' }}"><a class="page-link" href="#">{{ paginacion.siguiente }}</a></li>
+    </ul>
+</nav>
