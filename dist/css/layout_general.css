@@ -1,0 +1,254 @@
+/* Base, cabecera, pie, botones, forma_lobulo (motivo del logotipo). Márgenes y paddings: utilidades de Bootstrap en el HTML */
+:root {
+  --gutter_banda: 6.5rem;
+}
+body {
+  background: #fff;
+  color: var(--avantek-text-soft);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  color: var(--avantek-navy);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+a {
+  color: var(--avantek-navy);
+}
+a:hover {
+  color: var(--avantek-navy-400);
+}
+:focus-visible {
+  outline: 3px solid var(--avantek-navy);
+  outline-offset: 3px;
+}
+.titulo_banda {
+  font-size: clamp(1.9rem, 3.4vw, 2.8rem);
+}
+.texto_destacado {
+  font: 500 clamp(1.3rem, 2.2vw, 1.7rem)/1.35 var(--font-display);
+  color: var(--avantek-navy-900);
+  letter-spacing: -0.01em;
+}
+.cabecera_general {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.cabecera_marca {
+  display: flex;
+  align-items: center;
+}
+.logo_marca {
+  display: block;
+  height: 84px;
+  width: auto;
+}
+.cabecera_toggler {
+  border: 1px solid var(--border);
+  color: var(--avantek-navy);
+  min-width: 44px;
+  min-height: 44px;
+}
+.cabecera_toggler:focus {
+  box-shadow: 0 0 0 3px var(--avantek-sky);
+}
+.cabecera_menu {
+  gap: 0.25rem;
+}
+.cabecera_menu .nav-link {
+  font: 600 1rem var(--font-body);
+  color: var(--avantek-ink);
+  border-bottom: 3px solid transparent;
+}
+.cabecera_menu .nav-link:hover {
+  color: var(--avantek-navy);
+  border-bottom-color: var(--avantek-sky-300);
+}
+.cabecera_menu .nav-link.activo {
+  color: var(--avantek-navy);
+  border-bottom-color: var(--avantek-sky);
+}
+.boton_principal,
+.boton_secundario,
+.boton_claro {
+  display: inline-block;
+  font: 600 1rem var(--font-body);
+  border-radius: 6px;
+  text-decoration: none;
+  border: 2px solid var(--avantek-navy);
+  transition:
+    background var(--dur) var(--ease),
+    color var(--dur) var(--ease);
+  cursor: pointer;
+  line-height: 1.2;
+}
+.boton_principal {
+  background: var(--avantek-navy);
+  color: #fff;
+}
+.boton_principal:hover {
+  background: var(--avantek-navy-700);
+  border-color: var(--avantek-navy-700);
+  color: #fff;
+}
+.boton_secundario {
+  background: transparent;
+  color: var(--avantek-navy);
+}
+.boton_secundario:hover {
+  background: var(--avantek-navy);
+  color: #fff;
+}
+.boton_claro {
+  background: var(--avantek-sky);
+  border-color: var(--avantek-sky);
+  color: var(--avantek-navy-900);
+}
+.boton_claro:hover {
+  background: #fff;
+  border-color: #fff;
+  color: var(--avantek-navy-900);
+}
+.enlace_texto {
+  font-weight: 700;
+  color: var(--avantek-navy);
+  text-decoration: underline;
+  text-decoration-color: var(--avantek-sky);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+.enlace_texto:hover {
+  text-decoration-color: var(--avantek-navy);
+}
+.imagen_placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  background: var(--avantek-sky-100);
+  border: 1px dashed var(--avantek-sky-500);
+  border-radius: 6px;
+  color: var(--avantek-navy);
+  font: 600 0.85rem var(--font-body);
+  text-align: center;
+}
+.imagen_placeholder i {
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+.imagen_placeholder.forma_lobulo {
+  border-radius: var(--forma_lobulo);
+}
+.imagen_4_3 {
+  aspect-ratio: 4/3;
+}
+.imagen_16_10 {
+  aspect-ratio: 16/10;
+}
+.imagen_4_5 {
+  aspect-ratio: 4/5;
+}
+.pie_general {
+  background: var(--avantek-navy-900);
+  color: var(--avantek-sky-300);
+}
+.pie_general a {
+  color: var(--avantek-sky-100);
+  text-decoration: none;
+}
+.pie_general a:hover {
+  color: var(--avantek-sky);
+  text-decoration: underline;
+}
+.logo_marca_pie {
+  display: block;
+  height: 170px;
+  width: auto;
+}
+.pie_texto {
+  max-width: 28rem;
+}
+.pie_titulo {
+  font: 600 1rem var(--font-display);
+  color: var(--avantek-sky);
+}
+.pie_lista,
+.pie_legal_enlaces {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.pie_legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  justify-content: space-between;
+  border-top: 1px solid rgba(134, 210, 252, 0.25);
+  font-size: 0.9rem;
+}
+.pie_legal_enlaces {
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.banda_cierre {
+  background: var(--avantek-bg-soft);
+}
+.banda_cierre .cierre_titulo {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+.cierre_destinos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+.cierre_destino {
+  display: block;
+  text-decoration: none;
+  border-top: 3px solid var(--avantek-navy);
+  color: var(--avantek-text-soft);
+  transition: border-color var(--dur) var(--ease);
+}
+.cierre_destino strong {
+  display: block;
+  font: 600 1.6rem var(--font-display);
+  color: var(--avantek-navy);
+  letter-spacing: -0.02em;
+}
+.cierre_destino:hover {
+  border-top-color: var(--avantek-sky);
+  color: var(--avantek-text-soft);
+}
+.banda_cierre_discreto {
+  background: #fff;
+}
+@media (max-width: 991.98px) {
+  .logo_marca {
+    height: 68px;
+  }
+  :root {
+    --gutter_banda: 4.5rem;
+    --forma_lobulo: 0 28px 0 28px;
+  }
+}
+@media (max-width: 767.98px) {
+  .cierre_destinos {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .logo_marca_pie {
+    height: 120px;
+  }
+}

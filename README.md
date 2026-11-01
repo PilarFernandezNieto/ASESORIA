@@ -1,6 +1,8 @@
-# Web corporativa avantek (Twig)
+# Web corporativa Avantek
 
-Páginas en Twig + Bootstrap 5.3 + CSS propio. El contenido vive en `data/` (simula una base de datos) y se envía a las plantillas; cada banda es un parcial independiente en `templates/bandas/`.
+La web publicada es HTML estático: se puede copiar la carpeta `dist/` a cualquier ordenador y abrir `dist/index.html` en un navegador, sin instalar programas, usar PHP ni tener conexión a Internet. Bootstrap, los iconos y las imágenes se sirven desde archivos locales.
+
+El código fuente usa Twig para generar esas páginas. El contenido vive en `data/` y cada banda es una plantilla independiente en `templates/bandas/`.
 
 ## Estructura
 
@@ -42,11 +44,20 @@ Cada página es:
 
 ## Uso
 
+### Ver la web
+
+Abre `dist/index.html` con cualquier navegador. Para compartirla, copia la carpeta `dist/` completa; conserva su estructura de carpetas.
+
+### Regenerar la web desde las plantillas
+
+Para editar plantillas o datos y volver a generar `dist/`, sí hacen falta PHP y Composer en el ordenador de desarrollo:
+
 ```bash
 composer install
-php build.php        # genera dist/
-php -S localhost:8000 -t dist
+php build.php
 ```
+
+El contenido generado no necesita PHP ni Composer para verse. No hace falta ejecutar un servidor local.
 
 ## Criterios
 
